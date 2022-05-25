@@ -1,11 +1,5 @@
-/// We derive Deserialize/Serialize so we can persist app state on shutdown.
+#[derive(Default)]
 pub struct XnifferApp {}
-
-impl Default for XnifferApp {
-	fn default() -> Self {
-		Self {}
-	}
-}
 
 impl XnifferApp {
 	/// Called once before the first frame.
